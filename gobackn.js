@@ -6923,6 +6923,7 @@
         t.push([
           e.id,
           `body {
+           
             font-family: Arial, sans-serif;
           }
           .header,
@@ -6982,7 +6983,10 @@
         ]);
     },
     function(e, t) {
-      e.exports = `<div id="comp">
+      e.exports = `
+     
+      <div id="comp">
+      <div class="box">
         <div aria-labelledby="navigation">
           \r\n
           <div class="applet">
@@ -7075,6 +7079,7 @@
           \r\n
         </div>
         \r\n
+      </div>
       </div>
       \r\n
        `;
