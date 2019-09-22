@@ -7044,7 +7044,7 @@
               \r\n <canvas width="450" height="340"></canvas>\r\n
               <div class="top-label" aria-hidden="true">
                 \r\n
-                <p class="blue"> Sender <br/> (Send Window Size = 5) </p>
+                <p class="blue"> Sender <br/> (Send Window Size = 5)  <br/> Timeout = 10s</p>
                 \r\n\r\n
                 <p class="blue bottom-label" style="margin-top:200px;">
                   Receiver
