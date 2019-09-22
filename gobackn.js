@@ -6576,7 +6576,14 @@
         var n = function(e) {
           (this.history = []), (this.maxHistory = e || 500);
           var n =
-            '<div id="voice-log" role="log" aria-live="polite" aria-atomic="false" style="width:0px; height:0px; position: absolute; left: -9999px; font-size:0px; "></div>';
+            `<div
+            id="voice-log"
+            role="log"
+            aria-live="polite"
+            aria-atomic="false"
+            style="width:0px; height:0px; position: absolute; left: -9999px; font-size:0px; "
+          ></div>
+          `;
           t(document.body).append(n), (this.$voiceLog = t("#voice-log"));
         };
         (n.prototype = {
