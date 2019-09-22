@@ -6470,7 +6470,7 @@
         at_the_receiver_side: "at the receiver side",
         at_the_sender_side: "at the sender side",
         gobackn_caption:
-          "- GoBackN originally written by Matt Shatley & Chris Hoffman \n- Advised by Professor Paul D. Amer (amer@udel.edu), U of Delaware, 2008\n- Updated by Chris Hoffman and Professor Amer, 2012",
+          "- GoBackN ",
         simulation_paused: {
           text: "- Simulation paused.",
           voice: "Simulation paused."
@@ -6575,8 +6575,7 @@
       (function(t) {
         var n = function(e) {
           (this.history = []), (this.maxHistory = e || 500);
-          var n =
-            `<div
+          var n = `<div
             id="voice-log"
             role="log"
             aria-live="polite"
@@ -6633,10 +6632,10 @@
             height: 330px;
           }
           .animation,
-          .footer {
+          .footer1 {
             display: inline-block;
           }
-          .footer {
+          .footer1 {
           
             width: auto;
             height: auto;
@@ -6664,13 +6663,13 @@
             border: 1px solid #000;
             border-radius : 25px ;
           }
-          .footer .legend p,
+          .footer1 .legend p,
           .rect {
             display: inline-block;
             margin: 0;
             float: left;
           }
-          .footer .legend p {
+          .footer1 .legend p {
             padding-left: 5px;
           }
           .legend .red {
@@ -6972,8 +6971,9 @@
             box-sizing: border-box;
           }
           button:disabled {
-            background: #d3d3d3;
+            background: #E0E0E0;
             border: 1px solid #bcbcbc;
+            color : black;
           }
           button::-moz-focus-inner {
             border: 0;
@@ -6992,12 +6992,45 @@
     function(e, t) {
       e.exports = `
      
+      <div class="columns is-gapless">
+      <div class="column is-two-fifths ">
+          <p class="subtitle is-5" style="padding-left: 25px">This is a Simulation for <b>Go Back N Protocol</b> </p> <br/>
+ 
+          <br/>
+          <br/>
+          <br/>
+          <div class="table-container" >
+              <table class="table">
+               <tr>
+                 <td>
+                <b> Send New </b>: Sends new data packet
+                 </td>
+               </tr>
+               <tr>
+                 <td>
+                 <b> Kill Packet/Ack </b> : Simulate a loss of Packet/Ack,<br/> Select a moving packet/ack then click this.
+                 </td>
+               </tr>
+               <tr>
+                 <td> 
+                 <b> Pause </b>: To pause Simulation (Helpfull in Killing pkt/ack)</td>
+               </tr>
+               <tr>
+                 <td>
+                 <b> Reset </b>: Resets Simulation
+                 </td>
+               </tr>
+              </table>
+            </div>
+      </div>
+      <div class="column ">
+
       <div id="comp">
       <div class="box">
         <div aria-labelledby="navigation">
-          \r\n
+         
           <div class="applet">
-            \r\n
+           
             <div class="buttons" role="presentation" id="buttons-navigation">
               \r\n
               <button class="send-new" aria-label="Send New">Send New</button>\r\n
@@ -7023,7 +7056,7 @@
             \r\n
           </div>
           \r\n
-          <div class="footer"  aria-hidden="true">
+          <div class="footer1"  aria-hidden="true">
             \r\n
             <div class="legend" style=" border-radius: 25px;" aria-hidden="true">
               \r\n
@@ -7088,7 +7121,9 @@
         \r\n
       </div>
       </div>
-      \r\n
+      </div>
+      </div>
+      
        `;
     },
     function(e, t, n, i) {
