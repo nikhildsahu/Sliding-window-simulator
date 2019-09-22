@@ -6559,8 +6559,14 @@
       (function(t) {
         var n = function(e) {
           (this.history = []), (this.maxHistory = e || 500);
-          var n =
-            '<div id="voice-log" role="log" aria-live="polite" aria-atomic="false" style="width:0px; height:0px; position: absolute; left: -9999px; font-size:0px; "></div>';
+          var n = `<div
+            id="voice-log"
+            role="log"
+            aria-live="polite"
+            aria-atomic="false"
+            style="width:0px; height:0px; position: absolute; left: -9999px; font-size:0px; "
+          ></div>
+          `;
           t(document.body).append(n), (this.$voiceLog = t("#voice-log"));
         };
         (n.prototype = {
@@ -6583,7 +6589,113 @@
       (t = e.exports = n(10)()),
         t.push([
           e.id,
-          ".applet{width:800px;margin:5px;display:inline-block}.applet button{min-width:109px}.top-label{float:left;margin:3px;top:40px;position:relative}canvas{float:left}.blue{color:#0079d0;margin:5px 0}.top-label p{margin:0}.animation{height:330px}.animation,.footer{display:inline-block}.footer{width:auto;height:auto;position:relative;padding-bottom:0;padding:10px}.legend{width:auto;text-align:left;margin:0 auto;border:1px solid #000;padding:10px 20px 5px}.legend .block{display:inline-block;width:auto;text-align:center;margin:0 6px}.rect{width:15px;height:15px;border:2px solid #000}.footer .legend p,.rect{display:inline-block;margin:0;float:left}.footer .legend p{padding-left:5px}.legend .red{background:red}.legend .lime{background:lime}.legend .yellow{background:#ff0}.legend .blue{background:#4169e1}.legend .skyblue{background:skyblue}.legend .grey{background:grey}.log-container{top:15px;display:inline-block;position:relative;text-align:center;width:650px;margin:0 auto;box-sizing:border-box}.log-container p{display:inline-block;padding:0 20px}.log-container textarea{width:100%;display:inline-block;box-sizing:border-box;font-size:80%}p{-webkit-user-select:none}",
+          `.applet {
+            width: 800px;
+            margin: 5px;
+            display: inline-block;
+          }
+          .applet button {
+            min-width: 109px;
+          }
+          .top-label {
+            float: left;
+            margin: 3px;
+            top: 40px;
+            position: relative;
+          }
+          canvas {
+            float: left;
+          }
+          .blue {
+            color: #23c495;
+            margin: 5px 0;
+          }
+          .top-label p {
+            margin: 0;
+          }
+          .animation {
+            height: 330px;
+          }
+          .animation,
+          .footer {
+            display: inline-block;
+          }
+          .footer {
+            width: auto;
+            height: auto;
+            position: relative;
+            padding-bottom: 0;
+            padding: 10px;
+          }
+          .legend {
+            width: auto;
+            text-align: left;
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 10px 20px 5px;
+          }
+          .legend .block {
+            display: inline-block;
+            width: auto;
+            text-align: center;
+            margin: 0 6px;
+          }
+          .rect {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000;
+            border-radius : 25px ;
+          }
+          .footer .legend p,
+          .rect {
+            display: inline-block;
+            margin: 0;
+            float: left;
+          }
+          .footer .legend p {
+            padding-left: 5px;
+          }
+          .legend .red {
+            background: red;
+          }
+          .legend .lime {
+            background: lime;
+          }
+          .legend .yellow {
+            background: #ff0;
+          }
+          .legend .blue {
+            background: #4169e1;
+          }
+          .legend .skyblue {
+            background: skyblue;
+          }
+          .legend .grey {
+            background: grey;
+          }
+          .log-container {
+            top: 15px;
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            width: 650px;
+            margin: 0 auto;
+            box-sizing: border-box;
+          }
+          .log-container p {
+            display: inline-block;
+            padding: 0 20px;
+          }
+          .log-container textarea {
+            width: 100%;
+            display: inline-block;
+            box-sizing: border-box;
+            font-size: 80%;
+          }
+          p {
+            -webkit-user-select: none;
+          }
+          `,
           ""
         ]);
     },
@@ -6802,13 +6914,181 @@
       (t = e.exports = n(10)()),
         t.push([
           e.id,
-          "body{font-family:Arial,sans-serif}.header,h1{color:#101027;font-size:200%;font-weight:400;margin:.67em 0}.focusable,canvas{border:3px solid transparent}.focusable:focus,button:focus,canvas:focus{outline:none;border:3px solid #456}.text,p{font-size:100%;margin:1em 0}button{font-size:80%;height:25px;background:linear-gradient(#fff,#f0f0f0);border:1px solid #adadad;box-sizing:border-box}button:disabled{background:#d3d3d3;border:1px solid #bcbcbc}button::-moz-focus-inner{border:0}.navigation{width:0;height:0;padding:0;margin:0;overflow:hidden}",
+          `body {
+            font-family: Arial, sans-serif;
+          }
+          .header,
+          h1 {
+            color: #101027;
+            font-size: 200%;
+            font-weight: 400;
+            margin: 0.67em 0;
+          }
+          .focusable,
+          canvas {
+            border: 3px solid transparent;
+          }
+          .focusable:focus,
+          button:focus,
+          canvas:focus {
+            outline: none;
+            border: 3px solid #456;
+          }
+          .text,
+          p {
+            font-size: 100%;
+            margin: 1em 0;
+          }
+          button {
+            font-size: 80%;
+            height: 35px;
+            background-color: #23c495;
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 4px 6px;
+            border-radius: 30px;
+            border: 1px solid #adadad;
+            box-sizing: border-box;
+          }
+          button:disabled {
+            background: #d3d3d3;
+            border: 1px solid #bcbcbc;
+          }
+          button::-moz-focus-inner {
+            border: 0;
+          }
+          .navigation {
+            width: 0;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+          }
+          `,
           ""
         ]);
     },
     function(e, t) {
-      e.exports =
-        '<div id="content" class="content">\r\n  <h1>Selective Repeat Protocol.</h1>\r\n\r\n   <p class="navigation" id="navigation"></p>\r\n\r\n  <div class="applet" aria-labelledby="navigation">\r\n\r\n    <div class="buttons" id="buttons-navigation">\r\n      <button class="send-new" aria-label="Send New.">Send New</button>\r\n      <button class="pause">Pause</button>\r\n      <button class="faster" aria-label="Faster">Faster</button>\r\n      <button class="slower" aria-label="Slower">Slower</button>\r\n      <button class="killpacket-ack" aria-label="Kill Packet/Ack">Kill Packet/Ack</button>\r\n      <button class="reset">Reset</button>\r\n    </div>\r\n    <div class="animation">\r\n      <canvas width="450" height="340"></canvas>\r\n      <div class="top-label" aria-hidden="true">\r\n        <p class="blue" aria-hidden="true">Sender (Send Window Size = 5)</p>\r\n\r\n        <p class="base" aria-hidden="true">base = 1</p>\r\n\r\n        <p class="nextseqnum" aria-hidden="true">nextseqnum = 5</p>\r\n\r\n        <p class="blue bottom-label" style="margin-top:200px;" aria-hidden="true">Receiver (Send\r\n          Window Size = 5)</p>\r\n      </div>\r\n    </div>\r\n\r\n    <div class="footer" aria-hidden="true">\r\n      <div class="legend" aria-hidden="true">\r\n        <div class="block">\r\n          <div class="rect skyblue"></div>\r\n          <p>Packet</p>\r\n        </div>\r\n        <div class="block">\r\n          <div class="rect red"></div>\r\n          <p>Received</p>\r\n        </div>\r\n        <div class="block">\r\n          <div class="rect yellow"></div>\r\n          <p>Ack</p>\r\n        </div>\r\n        <div class="block">\r\n          <div class="rect blue"></div>\r\n          <p>Ack Received</p>\r\n        </div>\r\n        <div class="block">\r\n          <div class="rect lime"></div>\r\n          <p>Selected</p>\r\n        </div>\r\n        <div class="block">\r\n          <div class="rect grey"></div>\r\n          <p>Buffered</p>\r\n        </div>\r\n      </div>\r\n      <div class="log-container" tabindex="-1" aria-hidden="true">\r\n        <p aria-hidden="true">(S) - Action at Sender</p>\r\n\r\n        <p aria-hidden="true">(R) - Action at Receiver</p>\r\n        <textarea tabindex="-1" id="log-textarea" rows="2" aria-hidden="true" readonly></textarea>\r\n      </div>\r\n\r\n    </div>\r\n  </div>\r\n\r\n\r\n</div>\r\n';
+      e.exports = `  <div id="comp">
+        <div class="box">
+        <div id="content" class="content">
+        
+        \r\n\r\n
+        <p class="navigation" id="navigation"></p>
+        \r\n\r\n
+        <div class="applet" aria-labelledby="navigation">
+          \r\n\r\n
+          <div class="buttons" id="buttons-navigation">
+            \r\n <button class="send-new" aria-label="Send New.">Send New</button>\r\n
+            <button class="pause">Pause</button>\r\n
+           
+            <button class="killpacket-ack" aria-label="Kill Packet/Ack">
+              Kill Packet/Ack</button
+            >\r\n <button class="reset">Reset</button>\r\n
+          </div>
+          \r\n
+          <div class="animation">
+            \r\n <canvas width="450" height="340"></canvas>\r\n
+            <div class="top-label" aria-hidden="true">
+              \r\n
+              <p class="blue" aria-hidden="true">Sender (Send Window Size = 5)</p>
+              
+              \r\n\r\n
+              <p
+                class="blue bottom-label"
+                style="margin-top:200px;"
+                aria-hidden="true"
+             
+              > Receiver 
+              </p>
+              \r\n
+            </div>
+            \r\n
+          </div>
+          \r\n\r\n
+          <div class="footer" aria-hidden="true">
+            \r\n
+            <div class="legend" style=" border-radius: 25px;" aria-hidden="true">
+              \r\n
+              <div class="block">
+                \r\n
+                <div class="rect skyblue"></div>
+                \r\n
+                <p>Packet</p>
+                \r\n
+              </div>
+              \r\n
+              <div class="block">
+                \r\n
+                <div class="rect red"></div>
+                \r\n
+                <p>Received</p>
+                \r\n
+              </div>
+              \r\n
+              <div class="block">
+                \r\n
+                <div class="rect yellow"></div>
+                \r\n
+                <p>Ack</p>
+                \r\n
+              </div>
+              \r\n
+              <div class="block">
+                \r\n
+                <div class="rect blue"></div>
+                \r\n
+                <p>Ack Received</p>
+                \r\n
+              </div>
+              \r\n
+              <div class="block">
+                \r\n
+                <div class="rect lime"></div>
+                \r\n
+                <p>Selected</p>
+                \r\n
+              </div>
+              \r\n
+              <div class="block">
+                \r\n
+                <div class="rect grey"></div>
+                \r\n
+                <p>Buffered</p>
+                \r\n
+              </div>
+              \r\n
+            </div>
+            \r\n
+            <div class="log-container" tabindex="-1" aria-hidden="true">
+             
+      
+              \r\n
+              <textarea
+              style="display:none;"
+                tabindex="-1"
+                id="log-textarea"
+                rows="2"
+                aria-hidden="true"
+                readonly
+              ></textarea
+              >\r\n
+            </div>
+            \r\n\r\n
+          </div>
+          \r\n
+        </div>
+        \r\n\r\n\r\n
+      </div>
+      </div>
+      </div>
+    
+      `;
     },
     function(e, t, n, i) {
       var r = n(i);
