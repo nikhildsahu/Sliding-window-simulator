@@ -1,0 +1,8 @@
+#comp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin-top: -10em;
+  margin-left: -20em;
+}

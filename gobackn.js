@@ -5681,15 +5681,15 @@
             (this.allCells = {}),
             (this.countCells = 20),
             (this.isRender = !1),
-            (this.speedDefault = 0.7),
-            (this.speedPacket = this.speedDefault = 0.7),
+            (this.speedDefault = 0.8),
+            (this.speedPacket = this.speedDefault = 0.8),
             (this.speedPacketStep = 0.1),
             (this.delta = 4),
             (this.maxSpeed = 1),
             (this.minSpeed = 0.1),
             (this.isPaused = !1),
             (this.waitTimerId = void 0),
-            (this.waitSeconds = 15e3),
+            (this.waitSeconds = 10e3),
             (this.elements = {}),
             (this.nextSeqNum = 0);
         };
@@ -6599,7 +6599,111 @@
       (t = e.exports = n(10)()),
         t.push([
           e.id,
-          ".applet{margin:5px;display:block}.applet button{min-width:109px}.top-label{float:left;margin:3px;top:40px;position:relative}canvas{float:left}.blue{color:#0079d0;margin:5px 0}.top-label p{margin:0}.animation{height:330px}.animation,.footer{display:inline-block}.footer{width:auto;height:auto;position:relative;padding-bottom:0;padding:10px}.legend{margin:0 auto;border:1px solid #000;padding:10px 20px 5px}.legend,.legend .block{width:auto;text-align:center}.legend .block{display:inline-block;margin:0 18px}.rect{width:15px;height:15px;border:2px solid #000}.footer .legend p,.rect{display:inline-block;margin:0;float:left}.footer .legend p{padding-left:5px}.legend .red{background:red}.legend .lime{background:lime}.legend .yellow{background:#ff0}.legend .blue{background:#4169e1}.legend .skyblue{background:skyblue}.log-container{top:15px;display:inline-block;position:relative;text-align:center;width:650px;margin:0 auto;box-sizing:border-box}.log-container p{display:inline-block;padding:0 20px}.log-container textarea{width:100%;display:inline-block;box-sizing:border-box;font-size:80%}p{-webkit-user-select:none}",
+          `.applet {
+            margin: 5px;
+            display: block;
+          }
+          .applet button {
+            min-width: 109px;
+          }
+          .top-label {
+            float: left;
+            margin: 3px;
+            top: 40px;
+            position: relative;
+          }
+          canvas {
+            float: left;
+          }
+          .blue {
+            color: #23c495;
+            margin: 5px 0;
+          }
+          .top-label p {
+            margin: 0;
+          }
+          .animation {
+            height: 330px;
+          }
+          .animation,
+          .footer {
+            display: inline-block;
+          }
+          .footer {
+          
+            width: auto;
+            height: auto;
+            position: relative;
+            padding-bottom: 0;
+            padding: 10px;
+          }
+          .legend {
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 10px 20px 5px;
+          }
+          .legend,
+          .legend .block {
+            width: auto;
+            text-align: center;
+          }
+          .legend .block {
+            display: inline-block;
+            margin: 0 18px;
+          }
+          .rect {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000;
+            border-radius : 25px ;
+          }
+          .footer .legend p,
+          .rect {
+            display: inline-block;
+            margin: 0;
+            float: left;
+          }
+          .footer .legend p {
+            padding-left: 5px;
+          }
+          .legend .red {
+            background: red;
+          }
+          .legend .lime {
+            background: lime;
+          }
+          .legend .yellow {
+            background: #ff0;
+          }
+          .legend .blue {
+            background: #4169e1;
+          }
+          .legend .skyblue {
+            background: skyblue;
+          }
+          .log-container {
+            top: 15px;
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            width: 650px;
+            margin: 0 auto;
+            box-sizing: border-box;
+          }
+          .log-container p {
+            display: inline-block;
+            padding: 0 20px;
+          }
+          .log-container textarea {
+            width: 100%;
+            display: inline-block;
+            box-sizing: border-box;
+            font-size: 80%;
+          }
+          p {
+            -webkit-user-select: none;
+          }
+          `,
           ""
         ]);
     },
@@ -6818,13 +6922,162 @@
       (t = e.exports = n(10)()),
         t.push([
           e.id,
-          "body{font-family:Arial,sans-serif}.header,h1{color:#101027;font-size:200%;font-weight:400;margin:.67em 0}.focusable,canvas{border:3px solid transparent}.focusable:focus,button:focus,canvas:focus{outline:none;border:3px solid #555}.text,p{font-size:100%;margin:1em 0}button{font-size:80%;height:25px;background:linear-gradient(#fff,#f0f0f0);border:1px solid #adadad;box-sizing:border-box}button:disabled{background:#d3d3d3;border:1px solid #bcbcbc}button::-moz-focus-inner{border:0}.navigation{width:0;height:0;padding:0;margin:0;overflow:hidden}",
+          `body {
+            font-family: Arial, sans-serif;
+          }
+          .header,
+          h1 {
+            color: #101027;
+            font-size: 200%;
+            font-weight: 400;
+            margin: 0.67em 0;
+          }
+          .focusable,
+          canvas {
+            border: 3px solid transparent;
+          }
+          .focusable:focus,
+          button:focus,
+          canvas:focus {
+            outline: none;
+            border: 3px solid #555;
+          }
+          .text,
+          p {
+            font-size: 100%;
+            margin: 1em 0;
+          }
+          button {
+            font-size: 80%;
+            height: 35px;
+            background-color: #23c495;
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 4px 6px;
+            border-radius: 30px;
+            border: 1px solid #adadad;
+            box-sizing: border-box;
+          }
+          button:disabled {
+            background: #d3d3d3;
+            border: 1px solid #bcbcbc;
+          }
+          button::-moz-focus-inner {
+            border: 0;
+          }
+          .navigation {
+            width: 0;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+          }
+          `,
           ""
         ]);
     },
     function(e, t) {
-      e.exports =
-        '<div id="content" class="content"> <div aria-labelledby="navigation"   style=" top: 50% , left: 50%, " >\r\n    <div class="applet">\r\n      <div class="buttons" role="presentation" id="buttons-navigation">\r\n        <button class="send-new" aria-label="Send New">Send New</button>\r\n        <button class="pause">Pause</button>\r\n        <button class="faster" aria-label="Faster">Faster</button>\r\n        <button class="slower" aria-label="Slower">Slower</button>\r\n        <button class="killpacket-ack" aria-label="Kill Packet/Ack">Kill Packet/Ack</button>\r\n        <button class="reset" role="button">Reset</button>\r\n      </div>\r\n\r\n      <div class="animation" aria-hidden="true">\r\n        <canvas width="450" height="340"></canvas>\r\n        <div class="top-label" aria-hidden="true">\r\n          <p class="blue">Sender (Send Window Size = 5)</p>\r\n\r\n          <p class="base">base = 1</p>\r\n\r\n          <p class="nextseqnum">nextseqnum = 5</p>\r\n\r\n          <p class="blue bottom-label" style="margin-top:200px;">Receiver (Send Window Size = 1)</p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class="footer" aria-hidden="true">\r\n      <div class="legend" aria-hidden="true">\r\n        <div class="block">\r\n          <div class="rect skyblue"></div>\r\n          <p aria-label="blue - packet.">Packet</p>\r\n        </div>\r\n        <div class="block">\r\n          <div class="rect red"></div>\r\n          <p aria-label="red - Received.">Received</p>\r\n        </div>\r\n        <div class="block">\r\n          <div class="rect yellow"></div>\r\n          <p aria-hidden="true" aria-label="yellow - ack.">Ack</p>\r\n        </div>\r\n        <div class="block">\r\n          <div class="rect blue"></div>\r\n          <p aria-label="blue - ack received.">Ack Received</p>\r\n        </div>\r\n        <div class="block">\r\n          <div class="rect lime"></div>\r\n          <p aria-label="green - Selected.">Selected</p>\r\n        </div>\r\n      </div>\r\n      <div class="log-container" tabindex="-1" aria-hidden="true">\r\n        <p aria-hidden="true">(S) - Action at Sender</p>\r\n\r\n        <p aria-hidden="true">(R) - Action at Receiver</p>\r\n        <textarea tabindex="-1" id="log-textarea" rows="2" aria-hidden="true" readonly></textarea>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n';
+      e.exports = `<div id="comp">
+        <div aria-labelledby="navigation">
+          \r\n
+          <div class="applet">
+            \r\n
+            <div class="buttons" role="presentation" id="buttons-navigation">
+              \r\n
+              <button class="send-new" aria-label="Send New">Send New</button>\r\n
+              <button class="pause">Pause</button>\r\n
+              <button class="killpacket-ack" aria-label="Kill Packet/Ack">
+                Kill Packet/Ack</button
+              >\r\n <button class="reset" role="button">Reset</button>\r\n
+            </div>
+            \r\n\r\n
+            <div class="animation" aria-hidden="true">
+              \r\n <canvas width="450" height="340"></canvas>\r\n
+              <div class="top-label" aria-hidden="true">
+                \r\n
+                <p class="blue"> Sender <br/> (Send Window Size = 5) </p>
+                \r\n\r\n
+                <p class="blue bottom-label" style="margin-top:200px;">
+                  Receiver
+                </p>
+                \r\n
+              </div>
+              \r\n
+            </div>
+            \r\n
+          </div>
+          \r\n
+          <div class="footer"  aria-hidden="true">
+            \r\n
+            <div class="legend" style=" border-radius: 25px;" aria-hidden="true">
+              \r\n
+              <div class="block">
+                \r\n
+                <div class="rect skyblue"></div>
+                \r\n
+                <p aria-label="blue - packet.">Packet</p>
+                \r\n
+              </div>
+              \r\n
+              <div class="block">
+                \r\n
+                <div class="rect red"></div>
+                \r\n
+                <p aria-label="red - Received.">Received</p>
+                \r\n
+              </div>
+              \r\n
+              <div class="block">
+                \r\n
+                <div class="rect yellow"></div>
+                \r\n
+                <p aria-hidden="true" aria-label="yellow - ack.">Ack</p>
+                \r\n
+              </div>
+              \r\n
+              <div class="block">
+                \r\n
+                <div class="rect blue"></div>
+                \r\n
+                <p aria-label="blue - ack received.">Ack Received</p>
+                \r\n
+              </div>
+              \r\n
+              <div class="block">
+                \r\n
+                <div class="rect lime"></div>
+                \r\n
+                <p aria-label="green - Selected.">Selected</p>
+                \r\n
+              </div>
+              \r\n
+            </div>
+            \r\n
+            <div class="log-container" tabindex="-1" aria-hidden="true">
+              \r\n
+              <textarea
+                tabindex="-1"
+                id="log-textarea"
+                rows="0"
+                aria-hidden="true"
+                readonly
+                style="display:none;"
+              ></textarea
+              >\r\n
+            </div>
+            \r\n
+          </div>
+          \r\n
+        </div>
+        \r\n
+      </div>
+      \r\n
+       `;
     },
     function(e, t, n, i) {
       var r = n(i);

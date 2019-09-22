@@ -52,7 +52,7 @@
     },
     function(e, t, n) {
       var i, r;
-      
+
       !(function(t, n) {
         "object" == typeof e && "object" == typeof e.exports
           ? (e.exports = t.document
@@ -1069,8 +1069,7 @@
               re["[object " + t + "]"] = t.toLowerCase();
             }
           );
-        var he
-        /*!
+        var he = /*!
          * Sizzle CSS Selector Engine v2.2.1
          * http://sizzlejs.com/
          *
@@ -1079,7 +1078,7 @@
          * http://jquery.org/license
          *
          * Date: 2015-10-17
-         */ = (function(e) {
+         */ (function(e) {
           function t(e, t, n, i) {
             var r,
               o,
@@ -5671,15 +5670,15 @@
             (this.allCells = {}),
             (this.countCells = 20),
             (this.isRender = !1),
-            (this.speedDefault = 0.7),
-            (this.speedPacket = this.speedDefault = 0.7),
+            (this.speedDefault = 0.8),
+            (this.speedPacket = this.speedDefault = 0.8),
             (this.speedPacketStep = 0.1),
             (this.delta = 4),
             (this.maxSpeed = 1),
             (this.minSpeed = 0.1),
             (this.isPaused = !1),
             (this.waitTimerId = void 0),
-            (this.waitSeconds = 15e3),
+            (this.waitSeconds = 10e3),
             (this.elements = {}),
             (this.nextSeqNum = 0);
         };
