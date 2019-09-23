@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color:#ABD6DFFF">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,13 +8,11 @@
       name="description"
       content=" Simulation for Sliding Window Protocol"
     />
-
     <script type="application/ld+json">
       {
         "@context": "http://www.schema.org",
         "@type": "website",
         "name": "Sliding Window Protocol | Simulation",
-
         "url": "https://nikhilsahu.ml/Sliding-window-simulator/",
         "address": {
           "@type": "PostalAddress",
@@ -22,15 +20,10 @@
           "addressCountry": "India"
         },
         "email": "nikhilsahu6870@gmail.com",
-
         "sameAs": ["https://github.com/nikhildsahu/Sliding-window-simulator"]
       }
     </script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
-    />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
@@ -42,6 +35,10 @@
     <link rel="apple-touch-icon" sizes="72x72" href="./favicon.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="./favicon.png" />
     <link rel="stylesheet" href="./go.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+    />
   </head>
   <body>
     <!-- NAVBAR HERE -->
@@ -49,7 +46,7 @@
       class="navbar"
       role="navigation"
       aria-label="main navigation"
-      style="background-color: #EEEEEE"
+      style="background-color: #E7EBE0FF;"
     >
       <div class="navbar-brand">
         <a
@@ -99,6 +96,93 @@
       </div>
     </nav>
     <!----Nav ENDS-->
+    <div class="columns" style="padding: 5%">
+      <div class="column" style="background-color: #7DB46CFF;color: white; margin:1%">
+        <center>
+          <h2 style="font-size: 26px">
+            Sliding Window Protocol
+          </h2>
+        </center>
+        <br />
+        <p>
+          A sliding window protocol is a feature of packet-based data
+          transmission protocols. Sliding window protocols are used where
+          reliable in-order delivery of packets is required, such as in the data
+          link layer (OSI layer 2) as well as in the Transmission Control
+          Protocol (TCP)
+        </p>
+        <br />
+        <p>
+          In this project we have shown following Simulation for the same.
+          <li>
+            Go Back N
+          </li>
+          <li>
+            Selective Repeat
+          </li>
+        </p>
+      </div>
+      <div class="column" style="background-color: #7DB46CFF;color: white; margin:1%">
+        <center>
+          <h2 style="font-size: 26px">
+            Go Back N
+          </h2>
+        </center>
+        <br />
+        <p>
+          Go-Back-N ARQ is a specific instance of the automatic repeat request
+          (ARQ) protocol, in which the sending process continues to send a
+          number of frames specified by a window size even without receiving an
+          acknowledgement (ACK) packet from the receiver. It is a special case
+          of the general sliding window protocol with the transmit window size
+          of N and receive window size of 1. It can transmit N frames to the
+          peer before requiring an ACK.
+        </p>
+        <br />
+        <p>
+          For more about Go Back N Protocol click
+          <a href="https://www.tutorialspoint.com/a-protocol-using-go-back-n">
+            here</a
+          >
+        </p>
+        <br />
+        <center>
+          <a class="button" href="GoBackn.html">Show Simulation</a>
+        </center>
+      </div>
+      <div class="column" style="background-color: #7DB46CFF;color: white; margin:1%">
+        <center>
+          <h2 style="font-size: 26px">
+            Selective Repeat
+          </h2>
+        </center>
+        <br />
+        <p>
+          Selective repeat protocol, also called Selective Repeat ARQ (Automatic
+          Repeat reQuest), is a data link layer protocol that uses sliding
+          window method for reliable delivery of data frames. Here, only the
+          erroneous or lost frames are retransmitted, while the good frames are
+          received and buffered.
+        </p>
+        <br />
+        <p>
+          For more about Selective Repeat Protocol click<a
+            href="https://www.tutorialspoint.com/a-protocol-using-selective-repeat"
+          >
+            here</a
+          >
+        </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <center>
+          <a class="button" href="SelectiveRepeat.html">Show Simulation</a>
+        </center>
+      </div>
+    </div>
+
     <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
